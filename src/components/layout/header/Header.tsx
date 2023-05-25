@@ -10,7 +10,7 @@ const Header:FC = () => {
   }
 
   return (
-    <div className='my-4 py-10 px-8 text-grey h-12 bg-second flex items-center rounded-xl'>
+    <div className='my-4 py-8 px-4 text-grey h-12 bg-second flex items-center rounded-xl'>
       <Link href={'/'}>Home</Link>
       <SearchFriend/>
       <nav className='mr-4'>

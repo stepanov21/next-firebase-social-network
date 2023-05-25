@@ -12,7 +12,7 @@ const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => {
         "
         >
           <Aside />
-          <div className="bg-second overflow-hidden rounded-xl p-8">{children}</div>
+          <div className="bg-second overflow-hidden rounded-xl p-4">{children}</div>
         </main>
       </div>
     </>

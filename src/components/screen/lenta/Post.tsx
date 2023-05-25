@@ -20,7 +20,7 @@ const Post: FC<IPost> = ({ author, image, content, createdAt }) => {
   }
 
   return (
-    <div className="mt-6 p-4 rounded-lg border-2 border-gray-500">
+    <div className="mt-4 p-4 rounded-lg border-2 border-gray-500">
       <div className="flex items-center">
         <div className="w-[40px] h-[40px] rounded-full overflow-hidden">
           <img
