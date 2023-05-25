@@ -6,8 +6,8 @@ interface IDataUser {
 
 interface ICurrentUser {
   id: string;
-  avatar: string | undefined;
-  name: string | undefined;
+  avatar: string | null;
+  name: string | null;
 }
 
 interface IChatRoom {

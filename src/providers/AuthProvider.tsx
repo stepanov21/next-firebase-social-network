@@ -16,6 +16,7 @@ export interface IContext {
   ga: Auth;
   db: Firestore;
   storage: FirebaseStorage;
+  setCurrentUser: React.Dispatch<React.SetStateAction<ICurrentUser | undefined>>
 }
 
 export const AuthContext = createContext<IContext>(
