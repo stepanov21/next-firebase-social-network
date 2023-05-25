@@ -7,10 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primaryColor: 'var(--primary-bg)',
+        secondColor: 'var(--second-bg)',
+        accentColor: '#9479D8',
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        primaryColor: 'radial-gradient(100% 100% at 0% 0%, #3D4046 0%, #202227 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;'
       },
     },
   },
