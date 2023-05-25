@@ -10,6 +10,7 @@ import {
   orderBy,
   query
 } from "firebase/firestore";
+import { randomUUID } from "crypto";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,7 +59,7 @@ export default function Home() {
       <Layout>
         <Lenta/>
         {posts?.map((item) => {
-          return <Post key={item.createdAt.seconds} {...item} />;
+          return <Post key={item.author.id+item.content+item.image} {...item} />;
         })}
       </Layout>
   );
